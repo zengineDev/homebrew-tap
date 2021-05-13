@@ -5,28 +5,28 @@
 class Dojo < Formula
   desc ""
   homepage ""
-  version "0.0.19"
+  version "0.0.20"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/zengineDev/dojo/releases/download/v0.0.19/dojoctl_0.0.19_Darwin_x86_64.tar.gz"
-    sha256 "ff599c16df02a039cce2bad4cc13bc79a47ee204f901d0bdb7a1386a50db1dbc"
+    url "https://github.com/zengineDev/dojo/releases/download/v0.0.20/dojoctl_0.0.20_Darwin_x86_64.tar.gz"
+    sha256 "98fea7b6aca17004fe38743e631ce48d7eeef0ce4c5fd8130709ea03d8e2e48b"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/zengineDev/dojo/releases/download/v0.0.19/dojoctl_0.0.19_Darwin_arm64.tar.gz"
-    sha256 "e1d5f675ea9f13cff2317026ace7e334e6ce8b83c23986c4d79d376f015117e7"
+    url "https://github.com/zengineDev/dojo/releases/download/v0.0.20/dojoctl_0.0.20_Darwin_arm64.tar.gz"
+    sha256 "afeda665c9124ec7de2eb9387a1b154c363454c21e7e226ac0d41f8b863fba6e"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/zengineDev/dojo/releases/download/v0.0.19/dojoctl_0.0.19_Linux_x86_64.tar.gz"
-    sha256 "f1f6573fea655e5204fb4eda6eadd379ea34e019ec10fb9ecb2f63560a91a37b"
+    url "https://github.com/zengineDev/dojo/releases/download/v0.0.20/dojoctl_0.0.20_Linux_x86_64.tar.gz"
+    sha256 "8a721994b2d8e78de0d80e0c57eccc028ba91338459f7795074a45a030a855de"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/zengineDev/dojo/releases/download/v0.0.19/dojoctl_0.0.19_Linux_armv6.tar.gz"
-    sha256 "c973fb91b60e5bc5256aecb0cfa9716d088a01e4db90edf1cd847917f32129ae"
+    url "https://github.com/zengineDev/dojo/releases/download/v0.0.20/dojoctl_0.0.20_Linux_armv6.tar.gz"
+    sha256 "c5797d09c43f756daa038c38ec171d5725f15d86bf0f29853393f188823e5040"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/zengineDev/dojo/releases/download/v0.0.19/dojoctl_0.0.19_Linux_arm64.tar.gz"
-    sha256 "a7ff6b7cd3fc40271bb03bb77e71ce78f6f90aa6af9d96ae39412473c9fccbcd"
+    url "https://github.com/zengineDev/dojo/releases/download/v0.0.20/dojoctl_0.0.20_Linux_arm64.tar.gz"
+    sha256 "7f96f52194bbf7881cc7eaa33147ecee7721e2211132c732e91ce87b17eeae9f"
   end
 
   def install
